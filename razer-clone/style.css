@@ -1,66 +1,75 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
-    background-color: rgb(23, 23, 23);
+.container {
+    background-color: #0f0f0f;
     font-family: sans-serif;
     color: aliceblue;
     overflow-x: hidden;
     width: 100%;
 }
-.nav{
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0 10vw; 
-  height: 60px;
-  color: aliceblue;
-  display: flex;
-  gap: 3vw;
-  justify-content: space-between;
-  align-items: center;
 
-  border-bottom: 1px solid rgb(65, 233, 43);
+.nav {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10vw;
+    height: 60px;
+    color: aliceblue;
+    display: flex;
+    gap: 3vw;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid rgb(65, 233, 43);
 
 }
+.nav a{
+    text-decoration: none;
+    color: white;
+}
 
-.nav img{
+.nav img {
     height: 80%;
     width: 40px;
     align-self: center;
 }
+
 .material-symbols--search-rounded {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l5.6 5.6q.275.275.275.7t-.275.7t-.7.275t-.7-.275l-5.6-5.6q-.75.6-1.725.95T9.5 16m0-2q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14'/%3E%3C/svg%3E");
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l5.6 5.6q.275.275.275.7t-.275.7t-.7.275t-.7-.275l-5.6-5.6q-.75.6-1.725.95T9.5 16m0-2q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14'/%3E%3C/svg%3E");
 }
 
 .famicons--cart-outline {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Ccircle cx='176' cy='416' r='16' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='32'/%3E%3Ccircle cx='400' cy='416' r='16' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='32'/%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M48 80h64l48 272h256'/%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M160 288h249.44a8 8 0 0 0 7.85-6.43l28.8-144a8 8 0 0 0-7.85-9.57H128'/%3E%3C/svg%3E");
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Ccircle cx='176' cy='416' r='16' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='32'/%3E%3Ccircle cx='400' cy='416' r='16' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='32'/%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M48 80h64l48 272h256'/%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M160 288h249.44a8 8 0 0 0 7.85-6.43l28.8-144a8 8 0 0 0-7.85-9.57H128'/%3E%3C/svg%3E");
 }
-.ex{
+
+.ex {
     color: white;
     text-align: center;
     padding: 10px 0;
     background-color: rgba(147, 147, 147, 0.442);
     font-size: 14px;
-    height: 20px;
+    height: auto;
 }
-.baner img{
+
+.baner img {
     width: 100%;
     height: auto;
 }
-.more{
+
+.more {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,24 +80,28 @@
     text-align: center;
 }
 
-.more h1{
+.more h1 {
     color: rgb(65, 233, 43);
     font-size: 67px;
     margin-bottom: 30px;
 }
-.more p{
+
+.more p {
     font-size: 20px;
     margin-bottom: 20px;
 }
-#p1{
+
+#p1 {
     margin-bottom: 30px;
     font-size: 30px;
     margin-top: 30px;
 }
-.more a{
+
+.more a {
     color: rgb(65, 233, 43);
 }
-.FAMILY{
+
+.FAMILY {
     margin-top: 100px;
     display: flex;
     justify-content: center;
@@ -96,10 +109,12 @@
     flex-direction: column;
     gap: 30px;
 }
-.FAMILY h1{
+
+.FAMILY h1 {
     font-size: 40px;
 }
-.items{
+
+.items {
     margin-top: 50px;
     display: flex;
     justify-content: center;
@@ -108,37 +123,43 @@
     flex-wrap: wrap;
     margin-bottom: 50px;
 }
-.pro1{
+
+.pro1 {
     width: 290px;
     height: auto;
 }
-.p1_i{
+
+.p1_i {
     width: 100%;
     height: 300px;
     background-color: rgb(28, 27, 27);
 }
-.p1_d{
+
+.p1_d {
     display: flex;
     flex-direction: column;
     gap: 20px;
     background-color: #303030;
-     padding: 5% 5%;
-     height: 220px;
-     justify-content: space-between;
+    padding: 5% 5%;
+    height: 220px;
+    justify-content: space-between;
 }
-.i_i{
+
+.i_i {
     display: flex;
     flex-direction: row;
     gap: 15px;
 }
-.buy{
+
+.buy {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
     align-items: center;
-   
+
 }
-.buy_now{
+
+.buy_now {
     height: 30px;
     width: 70px;
     background-color: rgb(65, 233, 43);
@@ -148,11 +169,13 @@
     border-radius: 5px;
     font-weight: bold;
 }
-.d_d{
+
+.d_d {
     font-size: 16px;
     color: rgb(169, 169, 169);
 }
-.HOLIDAY{
+
+.HOLIDAY {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,6 +183,593 @@
     gap: 20px;
     padding-top: 5vh;
 }
-.HOLIDAY h1{
+
+.HOLIDAY h1 {
     font-size: 40px;
+}
+
+.site-footer {
+    background-color: #0f0f0f;
+    color: #cfcfcf;
+    padding: 48px 10vw 24px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(65, 233, 43, 0.06);
+}
+
+.footer-inner {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    min-width: 160px;
+    flex: 1 1 140px;
+}
+
+.footer-column h4 {
+    color: #fff;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column a {
+    color: #bfbfbf;
+    text-decoration: none;
+    display: block;
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+.footer-column a,
+.footer-bottom a {
+    transition: color 160ms ease-in-out, text-decoration 160ms ease-in-out;
+}
+
+.footer-column a:hover,
+.footer-column a:focus,
+.footer-bottom a:hover,
+.footer-bottom a:focus {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-follow .social-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.social {
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #cfcfcf;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.footer-brand {
+    margin-left: 12px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.brand-text {
+    color: #41e929;
+    font-weight: 700;
+}
+
+.footer-bottom {
+    margin-top: 26px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 16px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #9b9b9b;
+    flex-wrap: wrap;
+}
+
+.footer-bottom a {
+    color: #9b9b9b;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.sep {
+    margin: 0 6px;
+    color: rgba(255, 255, 255, 0.06);
+}
+
+.bottom-left {
+    flex: 1 1 250px;
+}
+
+.bottom-center {
+    flex: 2 1 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.bottom-right {
+    flex: 1 1 200px;
+    text-align: right;
+}
+
+
+
+.baner_01 {
+    background-image: url(https://res.cloudinary.com/dhbxrjpgc/image/upload/v1762190979/main_baner_rk087l.webp);
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0 200px 100px rgba(0, 0, 0, 0.7);
+    border-bottom: #0f0f0f solid 10px;
+    
+}
+
+a{
+    text-decoration: none;
+}
+.baner_01 h1 {
+    color: white;
+    font-size: 60px;
+    margin-top: 5vh;
+}
+
+.baner_01 h3 {
+    color: white;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.baner_01 p {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.baner_02 {
+    background-image: url(https://assets2.razerzone.com/images/pnx.assets/5f5599a5e8d73a479aff809ab38e861f/counter-strike-2-desktop2x.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0 100px 50px rgba(0, 0, 0, 0.7);
+    border-bottom: #0f0f0f solid 10px;
+}
+
+.baner_02 h1 {
+    color: white;
+    font-size: 60px;
+    margin-top: 5vh;
+}
+
+.baner_02 h3 {
+    color: white;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.p11 {
+    margin-top: 30px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.baner_03 {
+    background-image: url(https://res.cloudinary.com/dhbxrjpgc/image/upload/v1762333679/black-friday-razer-blades-desktop2x_xkf0ps.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0 200px 100px rgba(0, 0, 0, 0.7);
+    border-bottom: #0f0f0f solid 10px;
+}
+
+.baner_03 h1 {
+    color: white;
+    font-size: 60px;
+    margin-top: 5vh;
+}
+
+.baner_03 h3 {
+    color: white;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.baner_03 p {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.bane_03_04 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.baner_03_1 {
+    background-image: url(https://res.cloudinary.com/dhbxrjpgc/image/upload/v1762334019/razer-huntsman-v3-pro-8khz-line-b-950x580-desktop_kd9vd3.webp);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0 100px 50px rgba(0, 0, 0, 0.7);
+    border-bottom: #0f0f0f solid 10px;
+}
+
+.baner_03_2 {
+    background-image: url(https://res.cloudinary.com/dhbxrjpgc/image/upload/v1762334027/intel-holiday-bundle-b-950x580-desktop_aani2s.webp);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0 100px 50px rgba(0, 0, 0, 0.7);
+    border-bottom: #0f0f0f solid 10px;
+}
+
+.baner_03_3 {
+    background-image: url(https://res.cloudinary.com/dhbxrjpgc/image/upload/v1762334035/razer-and-joola-b-950x580-desktop_o5jp6e.webp);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0 100px 50px rgba(0, 0, 0, 0.7);
+    border-bottom: #0f0f0f solid 10px;
+}
+
+.baner_03_4 {
+    background-image: url(https://res.cloudinary.com/dhbxrjpgc/image/upload/v1762334052/the-running-man-b-950x580-desktop_aduvzn.webp);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0 100px 50px rgba(0, 0, 0, 0.7);
+    border-bottom: #0f0f0f solid 10px;
+}
+
+.baner_03_5 {
+    background-image: url(https://res.cloudinary.com/dhbxrjpgc/image/upload/v1762334059/iphone17-skins-b-950x580-desktop_tlwqoa.webp);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0 100px 50px rgba(0, 0, 0, 0.7);
+    border-bottom: #0f0f0f solid 10px;
+}
+
+.baner_03_6 {
+    background-image: url(https://res.cloudinary.com/dhbxrjpgc/image/upload/v1762334073/razer-20th-anni-b-950x580-desktop_jvqpte.webp);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0 100px 50px rgba(0, 0, 0, 0.7);
+    border-bottom: #0f0f0f solid 10px;
+}
+
+.bane_03_04 h1 {
+    color: white;
+    font-size: 30px;
+    margin-top: 5vh;
+}
+
+.bane_03_04 h3 {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.bane_03_04 p {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.row{
+    display: flex;  
+    justify-content: center;
+    gap: 30px;
+    flex-direction: row;
+    background-color: #2c2c2c;
+    height: 30;
+}
+.row a{
+    text-decoration: none;
+    color: white;
+}
+.items{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    flex-direction: column;
+    cursor: pointer;
+}
+.ex a{
+    text-decoration: underline;
+    color: white;
+}
+.text{
+    box-sizing: border-box;
+    padding: 10vh 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;  
+    padding-bottom: 15vh;
+    background-color: #000000;
+}
+
+.text h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: rgb(65, 233, 43);
+}
+
+.text p{
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+.baner_f_01{
+    background-image: url(https://res.cloudinary.com/dhbxrjpgc/image/upload/v1762364160/razer-lifestyle-chairs-category-450x480_ctutwm.webp);
+    background-size: cover;
+    background-position: center;
+    height: 150vh;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0 200px 100px rgba(0, 0, 0, 1);
+    border-bottom: #0f0f0f solid 10px;
+    gap: 20px;
+    box-shadow: inset 0 100px 50px rgba(0, 0, 0, 0.7);
+}
+.baner_f_02{
+    background-image: url(https://res.cloudinary.com/dhbxrjpgc/image/upload/v1762364716/collabs-category_mobile_768x460_u2iugh.webp);
+    background-size: cover;
+    background-position: center;
+    height: 150vh;
+    display: flex;
+    margin-top:2vh ;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0 200px 100px #0f0f0f;
+    border-bottom: #0f0f0f solid 10px;
+    gap: 20px;
+}
+.baner_f_03{
+    background-image: url(https://res.cloudinary.com/dhbxrjpgc/image/upload/v1762416080/450x480-mobile-cat-customs_r9s7h5.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    margin-top:2vh ;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0 200px 100px #0f0f0f;
+    border-bottom: #0f0f0f solid 10px;
+    gap: 20px;
+}
+.baner_f_04{
+    background-image: url(https://res.cloudinary.com/dhbxrjpgc/image/upload/v1762416101/lifestyle-category-bags-450x480-mobile-cat-banner_cmbjtl.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    margin-top:2vh ;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0 200px 100px #0f0f0f;
+    border-bottom: #0f0f0f solid 10px;
+    gap: 20px;
+}
+.baner_f_05{
+    background-image: url(https://res.cloudinary.com/dhbxrjpgc/image/upload/v1762416157/team-razer-jersey-category-450x480-mobile_wkw2ga.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    margin-top:2vh ;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0 200px 100px #0f0f0f;
+    border-bottom: #0f0f0f solid 10px;
+    gap: 20px;
+}
+.baner_f_06{
+    background-image: url(https://res.cloudinary.com/dhbxrjpgc/image/upload/v1762416211/lifestyle-sneki-snek-mobile_cvobwe.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    margin-top:2vh ;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0 200px 100px #0f0f0f;
+    border-bottom: #0f0f0f solid 10px;
+    gap: 20px;
+}
+.baner_f_07{
+    background-image: url(https://res.cloudinary.com/dhbxrjpgc/image/upload/v1762416268/sneki-snek-s2-450x480-mobile-cat-banner_egm2jb.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    margin-top:2vh ;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0 200px 100px #0f0f0f;
+    border-bottom: #0f0f0f solid 10px;
+    gap: 20px;
+}
+.baner_f_08{
+    background-image: url(https://res.cloudinary.com/dhbxrjpgc/image/upload/v1762416303/450x480-mobile-cat-gamer-room_q1pgse.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    margin-top:2vh ;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0 200px 100px #0f0f0f;
+    border-bottom: #0f0f0f solid 10px;
+    gap: 20px;
+}
+.baner_f_09{
+    background-image: url(https://res.cloudinary.com/dhbxrjpgc/image/upload/v1762416346/mobile-gear_o2tw1w.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    margin-top:2vh ;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0 200px 100px #0f0f0f;
+    border-bottom: #0f0f0f solid 10px;
+    gap: 20px;
+}
+.baner_f_10{
+    background-image: url(https://res.cloudinary.com/dhbxrjpgc/image/upload/v1762416445/mobile-respawn_qia1e7.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    margin-top:2vh ;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0 200px 100px #0f0f0f;
+    border-bottom: #0f0f0f solid 10px;
+    gap: 20px;
+}
+.baner_f_09{
+    background-image: url(https://res.cloudinary.com/dhbxrjpgc/image/upload/v1762416346/mobile-gear_o2tw1w.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    margin-top:2vh ;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0 200px 100px #0f0f0f;
+    border-bottom: #0f0f0f solid 10px;
+    gap: 20px;
+}
+.p1{
+    margin-top: 30px;
+    font-size:40px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 20px;
+    cursor: pointer;
+}
+.p2{
+    margin-top: 10px;
+    color: #9c9c9c;
+    width: 60%;
+    font-size: 20px;
+}
+
+.p3{
+    color: #41e929;
+}
+
+.p3:hover{
+    text-decoration: underline;
 }
